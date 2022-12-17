@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "dodawanie.h"
+#include "odejmowanie.h"
 
 int main() {
     int a,b,wybor;
-    int odejmowanie;
     printf("Podaj jakie dzialanie chcesz wykonac: \n1-dodawanie\n2-odejmowanie\n3-dzielenie\n4-mnozenie\n");
     scanf("%d",&wybor);
 
@@ -20,7 +20,7 @@ int main() {
             scanf("%d",&a);
             printf("Podaj pierwsza liczbe: ");
             scanf("%d",&b);
-            printf("Wynik: %d", odejmowanie);
+            printf("Wynik: %d", odejmowanie(a, b));
             break;
     }
     return 0;
