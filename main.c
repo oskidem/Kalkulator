@@ -1,5 +1,5 @@
 #include <stdio.h>
-int dodawanie (int a, int b); /*prototyp funkcji*/
+#include "dodawanie.h"
 
 int main() {
     int a,b,wybor;
@@ -8,8 +8,8 @@ int main() {
     printf("Podaj jakie dzialanie chcesz wykonac: \n1-dodawanie\n2-odejmowanie\n3-dzielenie\n4-mnozenie\n");
     scanf("%d",&wybor);
 
-    switch (wybor)
-        {case (1):
+    switch (wybor){
+        case (1):
             printf("Podaj pierwsza liczbe: ");
             scanf("%d",&a);
             printf("Podaj pierwsza liczbe: ");
@@ -19,12 +19,6 @@ int main() {
             break;
         }
             return 0;
-}
-int dodawanie (int a, int b)
-{
-    int dodawanie_ab;
-    dodawanie_ab= (a+b);
-    return dodawanie_ab;
 }
 
 
