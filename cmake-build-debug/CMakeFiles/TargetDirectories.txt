@@ -1,0 +1,3 @@
+/home/dominika/GIT/Kalkulator/cmake-build-debug/CMakeFiles/Kalkulator.dir
+/home/dominika/GIT/Kalkulator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dominika/GIT/Kalkulator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
