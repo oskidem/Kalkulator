@@ -36,7 +36,7 @@ int main() {
             scanf("%d",&a);
             printf("Podaj pierwsza liczbe: ");
             scanf("%d",&b);
-            if (a == b) printf ("Nie dzile przez 0!");
+            if (b == 0) printf ("Nie dzile przez 0!");
             else printf("Wynik: %d", mnozenie(a, b));
             break;
     }
