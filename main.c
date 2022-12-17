@@ -1,31 +1,55 @@
 #include <stdio.h>
-int dodawanie (int a, int b); /*prototyp funkcji*/
+#include "dodawanie.h"
+#include "odejmowanie.h"
+#include "mnozenie.h"
+#include "dzielenie.h"
+#include "modulo.h"
 
 int main() {
     int a,b,wybor;
-    int dodawanie;
-    int odejmowanie;
-    printf("Podaj jakie dzialanie chcesz wykonac: \n1-dodawanie\n2-odejmowanie\n3-dzielenie\n4-mnozenie\n");
+    printf("Podaj jakie dzialanie chcesz wykonac: \n1-dodawanie\n2-odejmowanie\n3-dzielenie\n4-mnozenie\n5-modulo\n");
     scanf("%d",&wybor);
 
-    switch (wybor)
-        {case (1):
+    switch (wybor){
+        case (1):
             printf("Podaj pierwsza liczbe: ");
             scanf("%d",&a);
-            printf("Podaj pierwsza liczbe: ");
+            printf("Podaj druga liczbe: ");
             scanf("%d",&b);
-            dodawanie= a+b;
-            printf("Wynik: %d",dodawanie);
+            printf("Wynik: %d", dodawanie(a,b));
             break;
-        }
-            return 0;
+        case (2):
+            printf("Podaj pierwsza liczbe: ");
+            scanf("%d",&a);
+            printf("Podaj druga liczbe: ");
+            scanf("%d",&b);
+            printf("Wynik: %d", odejmowanie(a, b));
+            break;
+        case (3):
+            printf("Podaj pierwsza liczbe: ");
+            scanf("%d",&a);
+            printf("Podaj druga liczbe: ");
+            scanf("%d",&b);
+            printf("Wynik: %d", dzielenie(a, b));
+            break;
+        case (4):
+            printf("Podaj pierwsza liczbe: ");
+            scanf("%d",&a);
+            printf("Podaj druga liczbe: ");
+            scanf("%d",&b);
+            if (b == 0) printf ("Nie dzile przez 0!");
+            else printf("Wynik: %d", mnozenie(a, b));
+            break;
+        case (5):
+            printf("Podaj pierwsza liczbe: ");
+            scanf("%d",&a);
+            printf("Podaj druga liczbe: ");
+            scanf("%d",&b);
+            printf("Wynik: %d", modulo(a, b));
+            break;
+        default:
+            printf("Cos nie dziala! Sprawdz to");
+            break;
+    }
+    return 0;
 }
-int dodawanie (int a, int b)
-{
-    int dodawanie_ab;
-    dodawanie_ab= (a+b);
-    return dodawanie_ab;
-}
-
-
-
