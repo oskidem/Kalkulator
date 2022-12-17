@@ -47,6 +47,9 @@ int main() {
             scanf("%d",&b);
             printf("Wynik: %d", modulo(a, b));
             break;
+        default:
+            printf("Cos nie dziala! Sprawdz to");
+            break;
     }
     return 0;
 }
