@@ -4,7 +4,7 @@
 
 #include "dodawanie.h"
 int dodawanie (int a, int b) {
-    int dodawanie_ab;
-    dodawanie_ab = (a + b);
-    return dodawanie_ab;
+    int wynik;
+    wynik = a + b;
+    return wynik;
 }
