@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "dodawanie.h"
 #include "odejmowanie.h"
+#include "mnozenie.h"
 
 int main() {
     int a,b,wybor;
@@ -21,6 +22,13 @@ int main() {
             printf("Podaj pierwsza liczbe: ");
             scanf("%d",&b);
             printf("Wynik: %d", odejmowanie(a, b));
+            break;
+        case (4):
+            printf("Podaj pierwsza liczbe: ");
+            scanf("%d",&a);
+            printf("Podaj pierwsza liczbe: ");
+            scanf("%d",&b);
+            printf("Wynik: %d", mnozenie(a, b));
             break;
     }
     return 0;
